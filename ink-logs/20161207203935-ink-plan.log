@@ -1,0 +1,61 @@
+The Terraform execution plan has been generated and is shown below.
+Resources are shown in alphabetical order for quick scanning. Green resources
+will be created (or destroyed and then created if an existing resource
+exists), yellow resources are being changed in-place, and red resources
+will be destroyed. Cyan entries are data sources to be read.
+
+Your plan was also saved to the path below. Call the "apply" subcommand
+with this plan file and Terraform will exactly execute this execution
+plan.
+
+Path: ink.plan
+
++ aws_instance.test
+    ami:                         "ami-c80b0aa2"
+    associate_public_ip_address: "<computed>"
+    availability_zone:           "<computed>"
+    ebs_block_device.#:          "<computed>"
+    ephemeral_block_device.#:    "<computed>"
+    instance_state:              "<computed>"
+    instance_type:               "m3.medium"
+    key_name:                    "rhettg"
+    network_interface_id:        "<computed>"
+    placement_group:             "<computed>"
+    private_dns:                 "<computed>"
+    private_ip:                  "<computed>"
+    public_dns:                  "<computed>"
+    public_ip:                   "<computed>"
+    root_block_device.#:         "<computed>"
+    security_groups.#:           "<computed>"
+    source_dest_check:           "true"
+    subnet_id:                   "subnet-2682187f"
+    tags.%:                      "1"
+    tags.Name:                   "a-test"
+    tenancy:                     "<computed>"
+    vpc_security_group_ids.#:    "<computed>"
+
++ aws_security_group.main
+    description:                          "Managed by Terraform"
+    egress.#:                             "1"
+    egress.482069346.cidr_blocks.#:       "1"
+    egress.482069346.cidr_blocks.0:       "0.0.0.0/0"
+    egress.482069346.from_port:           "0"
+    egress.482069346.prefix_list_ids.#:   "0"
+    egress.482069346.protocol:            "-1"
+    egress.482069346.security_groups.#:   "0"
+    egress.482069346.self:                "false"
+    egress.482069346.to_port:             "0"
+    ingress.#:                            "1"
+    ingress.2541437006.cidr_blocks.#:     "1"
+    ingress.2541437006.cidr_blocks.0:     "0.0.0.0/0"
+    ingress.2541437006.from_port:         "22"
+    ingress.2541437006.protocol:          "tcp"
+    ingress.2541437006.security_groups.#: "0"
+    ingress.2541437006.self:              "false"
+    ingress.2541437006.to_port:           "22"
+    name:                                 "a-test-main-sg"
+    owner_id:                             "<computed>"
+    tags.%:                               "1"
+    tags.Name:                            "a-test-main-sg"
+    vpc_id:                               "vpc-2c1c2849"
+Plan: 2 to add, 0 to change, 0 to destroy.
