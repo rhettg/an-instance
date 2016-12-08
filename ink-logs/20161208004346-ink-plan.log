@@ -1,0 +1,37 @@
+The Terraform execution plan has been generated and is shown below.
+Resources are shown in alphabetical order for quick scanning. Green resources
+will be created (or destroyed and then created if an existing resource
+exists), yellow resources are being changed in-place, and red resources
+will be destroyed. Cyan entries are data sources to be read.
+
+Your plan was also saved to the path below. Call the "apply" subcommand
+with this plan file and Terraform will exactly execute this execution
+plan.
+
+Path: ink.plan
+
+-/+ aws_instance.test
+    ami:                               "ami-c80b0aa2" => "ami-a93631be" (forces new resource)
+    associate_public_ip_address:       "true" => "<computed>"
+    availability_zone:                 "us-east-1d" => "<computed>"
+    ebs_block_device.#:                "0" => "<computed>"
+    ephemeral_block_device.#:          "0" => "<computed>"
+    instance_state:                    "running" => "<computed>"
+    instance_type:                     "m3.medium" => "m3.medium"
+    key_name:                          "rhettg" => "rhettg"
+    network_interface_id:              "eni-2b563aeb" => "<computed>"
+    placement_group:                   "" => "<computed>"
+    private_dns:                       "ip-172-31-21-99.ec2.internal" => "<computed>"
+    private_ip:                        "172.31.21.99" => "<computed>"
+    public_dns:                        "ec2-54-211-217-200.compute-1.amazonaws.com" => "<computed>"
+    public_ip:                         "54.211.217.200" => "<computed>"
+    root_block_device.#:               "1" => "<computed>"
+    security_groups.#:                 "0" => "<computed>"
+    source_dest_check:                 "true" => "true"
+    subnet_id:                         "subnet-2682187f" => "subnet-2682187f"
+    tags.%:                            "1" => "1"
+    tags.Name:                         "a-test" => "a-test"
+    tenancy:                           "default" => "<computed>"
+    vpc_security_group_ids.#:          "1" => "1"
+    vpc_security_group_ids.1649986235: "sg-5052192d" => "sg-5052192d"
+Plan: 1 to add, 0 to change, 1 to destroy.
