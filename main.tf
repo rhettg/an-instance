@@ -12,16 +12,16 @@ resource "aws_instance" "test" {
   key_name = "${var.key_name}"
 
   tags {
-    Name = "${var.name}"
+    Name = "${var.ink_name}"
   }
 }
 
 resource "aws_security_group" "main" {
-  name   = "${var.name}-main-sg"
+  name   = "${var.ink_name}-main-sg"
   vpc_id = "${var.vpc_id}"
 
   tags {
-    Name = "${var.name}-main-sg"
+    Name = "${var.ink_name}-main-sg"
   }
 
   ingress {

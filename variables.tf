@@ -1,4 +1,4 @@
-variable "name" {
+variable "ink_name" {
  description = "Identifier for resources"
 }
 
