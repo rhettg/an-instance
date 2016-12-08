@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "test" {
-  ami           = "ami-c80b0aa2"
+  ami           = "ami-a93631be"
   instance_type = "m3.medium"
 
   subnet_id              = "${var.subnet_id}"
