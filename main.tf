@@ -40,5 +40,5 @@ resource "aws_security_group" "main" {
 }
 
 output "server_ip" {
-  value = "${aws_instance.test.public_ip}"
+  value = "${aws_instance.an-instance.public_ip}"
 }
