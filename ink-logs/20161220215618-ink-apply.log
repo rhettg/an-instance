@@ -1,0 +1,46 @@
+aws_instance.test: Destroying...
+aws_instance.an-instance: Creating...
+  ami:                               "" => "ami-a93631be"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "m3.medium"
+  key_name:                          "" => "rhettg"
+  network_interface_id:              "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-2682187f"
+  tags.%:                            "" => "1"
+  tags.Name:                         "" => "an-instance"
+  tenancy:                           "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.1915179133: "" => "sg-38c1fd45"
+aws_instance.test: Still destroying... (10s elapsed)
+aws_instance.an-instance: Still creating... (10s elapsed)
+aws_instance.test: Still destroying... (20s elapsed)
+aws_instance.an-instance: Still creating... (20s elapsed)
+aws_instance.test: Still destroying... (30s elapsed)
+aws_instance.an-instance: Still creating... (30s elapsed)
+aws_instance.test: Destruction complete
+aws_instance.an-instance: Creation complete
+
+Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+server_ip = 52.90.184.72
