@@ -1,0 +1,39 @@
+The Terraform execution plan has been generated and is shown below.
+Resources are shown in alphabetical order for quick scanning. Green resources
+will be created (or destroyed and then created if an existing resource
+exists), yellow resources are being changed in-place, and red resources
+will be destroyed. Cyan entries are data sources to be read.
+
+Your plan was also saved to the path below. Call the "apply" subcommand
+with this plan file and Terraform will exactly execute this execution
+plan.
+
+Path: ink.plan
+
++ aws_instance.an-instance
+    ami:                               "ami-a93631be"
+    associate_public_ip_address:       "<computed>"
+    availability_zone:                 "<computed>"
+    ebs_block_device.#:                "<computed>"
+    ephemeral_block_device.#:          "<computed>"
+    instance_state:                    "<computed>"
+    instance_type:                     "m3.medium"
+    key_name:                          "rhettg"
+    network_interface_id:              "<computed>"
+    placement_group:                   "<computed>"
+    private_dns:                       "<computed>"
+    private_ip:                        "<computed>"
+    public_dns:                        "<computed>"
+    public_ip:                         "<computed>"
+    root_block_device.#:               "<computed>"
+    security_groups.#:                 "<computed>"
+    source_dest_check:                 "true"
+    subnet_id:                         "subnet-2682187f"
+    tags.%:                            "1"
+    tags.Name:                         "an-instance"
+    tenancy:                           "<computed>"
+    vpc_security_group_ids.#:          "1"
+    vpc_security_group_ids.1915179133: "sg-38c1fd45"
+
+- aws_instance.test
+Plan: 1 to add, 0 to change, 1 to destroy.
