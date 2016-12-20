@@ -2,7 +2,7 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
-resource "aws_instance" "test" {
+resource "aws_instance" "an-instance" {
   ami           = "ami-a93631be"
   instance_type = "m3.medium"
 
