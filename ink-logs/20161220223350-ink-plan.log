@@ -1,0 +1,15 @@
+The Terraform execution plan has been generated and is shown below.
+Resources are shown in alphabetical order for quick scanning. Green resources
+will be created (or destroyed and then created if an existing resource
+exists), yellow resources are being changed in-place, and red resources
+will be destroyed. Cyan entries are data sources to be read.
+
+Your plan was also saved to the path below. Call the "apply" subcommand
+with this plan file and Terraform will exactly execute this execution
+plan.
+
+Path: ink.plan
+
+~ aws_instance.an-instance
+    tags.Name: "an-instance-lab" => "an-instance-lab-two"
+Plan: 0 to add, 1 to change, 0 to destroy.
