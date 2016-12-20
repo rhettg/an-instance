@@ -1,0 +1,65 @@
+aws_security_group.main: Creating...
+  description:                          "" => "Managed by Terraform"
+  egress.#:                             "" => "1"
+  egress.482069346.cidr_blocks.#:       "" => "1"
+  egress.482069346.cidr_blocks.0:       "" => "0.0.0.0/0"
+  egress.482069346.from_port:           "" => "0"
+  egress.482069346.prefix_list_ids.#:   "" => "0"
+  egress.482069346.protocol:            "" => "-1"
+  egress.482069346.security_groups.#:   "" => "0"
+  egress.482069346.self:                "" => "false"
+  egress.482069346.to_port:             "" => "0"
+  ingress.#:                            "" => "1"
+  ingress.2541437006.cidr_blocks.#:     "" => "1"
+  ingress.2541437006.cidr_blocks.0:     "" => "0.0.0.0/0"
+  ingress.2541437006.from_port:         "" => "22"
+  ingress.2541437006.protocol:          "" => "tcp"
+  ingress.2541437006.security_groups.#: "" => "0"
+  ingress.2541437006.self:              "" => "false"
+  ingress.2541437006.to_port:           "" => "22"
+  name:                                 "" => "an-instance-main-sg"
+  owner_id:                             "" => "<computed>"
+  tags.%:                               "" => "1"
+  tags.Name:                            "" => "an-instance-main-sg"
+  vpc_id:                               "" => "vpc-2c1c2849"
+aws_security_group.main: Creation complete
+aws_instance.test: Creating...
+  ami:                               "" => "ami-a93631be"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "m3.medium"
+  key_name:                          "" => "rhettg"
+  network_interface_id:              "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-2682187f"
+  tags.%:                            "" => "1"
+  tags.Name:                         "" => "an-instance"
+  tenancy:                           "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.1547009046: "" => "sg-6b112d16"
+aws_instance.test: Still creating... (10s elapsed)
+aws_instance.test: Still creating... (20s elapsed)
+aws_instance.test: Creation complete
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+server_ip = 54.226.140.152
