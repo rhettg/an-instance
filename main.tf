@@ -12,7 +12,7 @@ resource "aws_instance" "an-instance" {
   key_name = "${var.key_name}"
 
   tags {
-    Name = "${var.ink_name}"
+    Name = "${var.ink_name}-two"
   }
 }
 
