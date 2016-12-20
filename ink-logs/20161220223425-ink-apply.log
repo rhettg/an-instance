@@ -1,0 +1,16 @@
+aws_instance.an-instance: Modifying...
+  tags.Name: "an-instance-lab" => "an-instance-lab-two"
+aws_instance.an-instance: Modifications complete
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+server_ip = 54.145.54.253
