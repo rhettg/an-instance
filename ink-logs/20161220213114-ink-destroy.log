@@ -1,8 +1,0 @@
-aws_instance.test: Destroying...
-aws_instance.test: Still destroying... (10s elapsed)
-aws_instance.test: Still destroying... (20s elapsed)
-aws_instance.test: Destruction complete
-aws_security_group.main: Destroying...
-aws_security_group.main: Destruction complete
-
-Destroy complete! Resources: 2 destroyed.
