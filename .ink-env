@@ -1,3 +1,4 @@
 TF_VAR_vpc_id=vpc-2c1c2849
 TF_VAR_subnet_id=subnet-2682187f
 TF_VAR_key_name=rhettg
+TF_VAR_ink_name=an-instance
