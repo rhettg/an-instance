@@ -1,3 +1,0 @@
-module root: 1 error(s) occurred:
-
-* output 'server_ip': unknown resource 'aws_instance.test' referenced in variable aws_instance.test.public_ip
