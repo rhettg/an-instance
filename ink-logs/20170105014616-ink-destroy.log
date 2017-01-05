@@ -1,0 +1,4 @@
+aws_security_group.main: Destroying...
+aws_security_group.main: Destruction complete
+
+Destroy complete! Resources: 1 destroyed.
