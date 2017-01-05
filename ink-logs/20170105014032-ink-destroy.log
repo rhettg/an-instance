@@ -1,8 +1,0 @@
-aws_instance.an-instance: Destroying...
-aws_instance.an-instance: Still destroying... (10s elapsed)
-aws_instance.an-instance: Still destroying... (20s elapsed)
-aws_instance.an-instance: Destruction complete
-aws_security_group.main: Destroying...
-aws_security_group.main: Destruction complete
-
-Destroy complete! Resources: 2 destroyed.
