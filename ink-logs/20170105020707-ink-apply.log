@@ -1,0 +1,30 @@
+aws_security_group.main: Modifying...
+  ingress.#:                            "1" => "2"
+  ingress.1799340084.cidr_blocks.#:     "0" => "1"
+  ingress.1799340084.cidr_blocks.0:     "" => "0.0.0.0/0"
+  ingress.1799340084.from_port:         "" => "-1"
+  ingress.1799340084.protocol:          "" => "icmp"
+  ingress.1799340084.security_groups.#: "0" => "0"
+  ingress.1799340084.self:              "" => "false"
+  ingress.1799340084.to_port:           "" => "-1"
+  ingress.2541437006.cidr_blocks.#:     "1" => "1"
+  ingress.2541437006.cidr_blocks.0:     "0.0.0.0/0" => "0.0.0.0/0"
+  ingress.2541437006.from_port:         "22" => "22"
+  ingress.2541437006.protocol:          "tcp" => "tcp"
+  ingress.2541437006.security_groups.#: "0" => "0"
+  ingress.2541437006.self:              "false" => "false"
+  ingress.2541437006.to_port:           "22" => "22"
+aws_security_group.main: Modifications complete
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+server_ip = 52.87.210.214
